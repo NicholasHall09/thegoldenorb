@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Golden Orb of Human Virtue</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section id="home" class="screen active">
+      <div class="sigil">GOHV</div>
+      <h1>The Golden Orb<br />of Human Virtue</h1>
+      <p class="intro">
+        Beneath myth, ritual, doctrine, and law, human beings have always returned to the same questions:
+        why are we kind, cruel, forgiving, envious, honest, cowardly, loving, and false?
+      </p>
+      <p class="intro small">
+        No commandments. No guilt. No hierarchy. No salvation. Only contemplation.
+      </p>
+
+      <div class="objects">
+        <button class="object-card" id="virtueBtn" aria-label="Contemplate a virtue">
+          <span class="orb"></span>
+          <span>Contemplate Virtue</span>
+        </button>
+        <button class="object-card" id="viceBtn" aria-label="Contemplate a vice">
+          <span class="cube"></span>
+          <span>Contemplate Vice</span>
+        </button>
+      </div>
+
+      <div class="home-actions">
+        <button id="mirrorBtn" class="mirror-btn">Enter the Mirror</button>
+        <button id="supportBtn" class="mirror-btn support-link">Support the Mission</button>
+      </div>
+    </section>
+
+    <section id="reflection" class="screen">
+      <button class="back" id="backBtn">← Return</button>
+      <div class="type-label" id="typeLabel"></div>
+      <h2 id="title"></h2>
+      <p id="definition" class="definition"></p>
+      <blockquote id="commentary" class="entity-commentary"></blockquote>
+      <div class="questions">
+        <h3>Questions</h3>
+        <ul id="questionList"></ul>
+      </div>
+      <div class="related">
+        <h3>Related</h3>
+        <p id="relatedList"></p>
+      </div>
+      <button id="anotherBtn" class="another">Contemplate Another</button>
+    </section>
+
+    <section id="mirror" class="screen">
+      <button class="back" id="mirrorBackBtn">← Return</button>
+      <div class="type-label">THE MIRROR</div>
+      <h2>Which is more present in you today?</h2>
+      <div class="mirror-grid">
+        <article class="mirror-panel gold">
+          <span>Virtue</span>
+          <h3 id="mirrorVirtue"></h3>
+          <p id="mirrorVirtueDef"></p>
+        </article>
+        <article class="mirror-panel crimson">
+          <span>Vice</span>
+          <h3 id="mirrorVice"></h3>
+          <p id="mirrorViceDef"></p>
+        </article>
+      </div>
+      <p class="mirror-question" id="mirrorQuestion"></p>
+      <button id="mirrorAgainBtn" class="another">Look Again</button>
+    </section>
+
+    <section id="support" class="screen">
+      <button class="back" id="supportBackBtn">← Return</button>
+      <div class="type-label">SUPPORT</div>
+      <h2>Support the Mission</h2>
+      <div class="support-panel">
+        <p>The Golden Orb asks for nothing.</p>
+        <p>The Crimson Cube demands everything.</p>
+        <p>We settled on a donation button.</p>
+        <p>
+          The Golden Orb of Human Virtue exists to encourage reflection on the virtues and vices that shape human life.
+          If you have found value in these contemplations, consider supporting the project.
+        </p>
+        <h3>The Collective Unconscious Hungers</h3>
+        <p>Virtues and vices do not contemplate themselves.</p>
+        <p>Feed the Orb.</p>
+        <p>Nourish the Cube.</p>
+        <p>Sustain reflection.</p>
+        <p><em>When you stare into the Collective Unconscious, it stares back into you.</em></p>
+        <a class="donate-button" href="#" aria-label="Donate to support the mission">Donate</a>
+        <p class="donation-note">Replace this placeholder link with your Stripe, Ko-fi, PayPal, or Buy Me a Coffee URL.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
